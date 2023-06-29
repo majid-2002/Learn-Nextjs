@@ -15,8 +15,6 @@ export default async function UsersPage() {
     const usersData: Promise<UserType[]> = getAllUsers(); //? get all users data as promise from lib/getAllUsers.ts
     const users = await usersData; //? await for usersData promise to resolve
 
-    console.log(users)
-
     const content = (
         <section>
             <h2>
